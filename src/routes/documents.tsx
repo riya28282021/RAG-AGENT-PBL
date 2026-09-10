@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AppShell, DocumentsPage } from "@/components/ragent/workspace";
+export const Route = createFileRoute("/documents")({ head: () => ({ meta: [{ title: "RAGENT — Documents" }, { name: "description", content: "Manage and inspect the documents in your RAGENT knowledge base." }, { property: "og:title", content: "RAGENT — Documents" }, { property: "og:description", content: "Manage and inspect the documents in your RAGENT knowledge base." }] }), component: () => <AppShell><DocumentsPage /></AppShell> });

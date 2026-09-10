@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AppShell, EvaluationPage } from "@/components/ragent/workspace";
+export const Route = createFileRoute("/evaluation")({ head: () => ({ meta: [{ title: "RAGENT — Evaluation" }, { name: "description", content: "Measure retrieval, faithfulness, citation quality, and latency." }, { property: "og:title", content: "RAGENT — Evaluation" }, { property: "og:description", content: "Measure retrieval, faithfulness, citation quality, and latency." }] }), component: () => <AppShell><EvaluationPage /></AppShell> });
