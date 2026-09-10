@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AppShell, SettingsPage } from "@/components/ragent/workspace";
+export const Route = createFileRoute("/settings")({ head: () => ({ meta: [{ title: "RAGENT — Settings" }, { name: "description", content: "Configure retrieval and response behavior for RAGENT." }, { property: "og:title", content: "RAGENT — Settings" }, { property: "og:description", content: "Configure retrieval and response behavior for RAGENT." }] }), component: () => <AppShell><SettingsPage /></AppShell> });

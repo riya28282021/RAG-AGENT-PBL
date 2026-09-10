@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { AppShell, ChatPage } from "@/components/ragent/workspace";
+export const Route = createFileRoute("/chat")({ head: () => ({ meta: [{ title: "RAGENT — Cardinality Estimation" }, { name: "description", content: "Ask source-grounded questions and inspect the retrieval path." }, { property: "og:title", content: "RAGENT — Cardinality Estimation" }, { property: "og:description", content: "Ask source-grounded questions and inspect the retrieval path." }] }), component: () => <AppShell><ChatPage /></AppShell> });
